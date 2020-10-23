@@ -10,8 +10,8 @@ in
       pkgconfig
       gnome2.gtkmm
       gnome2.libglademm
-      gnome2.libglade
-      glade
+      # enable for editing *.glade files
+      # glade
       nix
       ];
   }
