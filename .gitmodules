@@ -1,0 +1,3 @@
+[submodule "CommonLib"]
+	path = CommonLib
+	url = git@github.com:bburdette/CommonLib.git
