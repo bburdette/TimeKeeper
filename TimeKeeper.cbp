@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TimeKeeper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="TimeKeeper/TimeKeeper" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./TimeKeeper" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-march=athlon-fx" />
+					<Add option="-g" />
+					<Add directory="/nix/store/krs1vd4s6wq8kzjx3ck8kxl6j57s656x-libglade-2.6.4-dev/include/libglade-2.0" />
+				</Compiler>
+				<Linker>
+					<Add library="libCommonLib.a" />
+					<Add directory="../CommonLib/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="TimeKeeper/TimeKeeper" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="./TimeKeeper" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libCommonLib.a" />
+					<Add directory="../CommonLib/bin/Release" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
+			<Add directory="/usr/include/libglade-2.0" />
+			<Add directory="../CommonLib" />
+			<Add directory="/usr/include/gtk-2.0/" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+			<Add option="-export-dynamic" />
+			<Add library="PocoFoundation" />
+			<Add library="glade-2.0" />
+		</Linker>
+		<Unit filename="TimeKeeper.cpp" />
+		<Unit filename="TimeKeeper.h" />
+		<Unit filename="TimePeriod.cpp" />
+		<Unit filename="TimePeriod.h" />
+		<Unit filename="Timekeeper to do.txt" />
+		<Unit filename="TkStuff.cpp" />
+		<Unit filename="TkStuff.h" />
+		<Unit filename="gladefile.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="timeKeeper notes.txt" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

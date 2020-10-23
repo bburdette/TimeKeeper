@@ -1,0 +1,17 @@
+EXPORTS
+on_new1_activate
+on_quit1_activate
+on_TimeLogMain_destroy
+on_LogIn_clicked
+on_LogOut_clicked
+on_open1_activate
+on_save1_activate
+on_save_as1_activate
+on_delete1_activate
+on_about1_activate
+on_tab_delimited_export_activate
+on_time_report_activate
+on_reg_hours_activate
+on_dec_hours_activate
+on_ReportOptions_Ok_clicked
+on_ReportOptions_Cancel_clicked
