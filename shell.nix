@@ -7,7 +7,8 @@ in
 
   
     buildInputs = [
-      codeblocksFull
+      codeblocks
+      # codeblocksFull
       poco
       pkgconfig
       gnome2.gtkmm
