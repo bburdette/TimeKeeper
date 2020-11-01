@@ -10,8 +10,8 @@ AR = ar
 LD = g++
 WINDRES = windres
 
-INC = -I/usr/include/libglade-2.0 -I./CommonLib -I/usr/include/gtk-2.0/
-CFLAGS = -Wall `pkg-config gtk+-2.0 --cflags`
+INC = -I./CommonLib
+CFLAGS = -Wall `pkg-config libglade-2.0 --cflags`
 RESINC = 
 LIBDIR = 
 LIB = -lPocoFoundation -lglade-2.0

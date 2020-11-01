@@ -18,7 +18,4 @@ in
       # glade
       nix
       ];
-
-  NIX_CFLAGS_COMPILE = "-isystem ${lib.getDev gnome2.libglade}/include/libglade-2.0";
-
   }
