@@ -11,7 +11,7 @@ LD = g++
 WINDRES = windres
 
 INC = -I./CommonLib
-CFLAGS = -Wall `pkg-config libglade-2.0 --cflags`
+CFLAGS = -std=c++11 -Wall `pkg-config libglade-2.0 --cflags`
 RESINC = 
 LIBDIR = 
 LIB = -lPocoFoundation -lglade-2.0
